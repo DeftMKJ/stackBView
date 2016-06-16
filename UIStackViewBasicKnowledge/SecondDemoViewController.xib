@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondDemoViewController">
+            <connections>
+                <outlet property="tableView" destination="Doa-uM-McY" id="7lR-fR-q3g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Doa-uM-McY">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="M1O-ZH-3qb"/>
+                        <outlet property="delegate" destination="-1" id="7GM-5b-Y7h"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Doa-uM-McY" secondAttribute="bottom" id="X15-Ac-Li8"/>
+                <constraint firstItem="Doa-uM-McY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mSX-Gi-YJP"/>
+                <constraint firstAttribute="trailing" secondItem="Doa-uM-McY" secondAttribute="trailing" id="mSl-mM-ZaK"/>
+                <constraint firstItem="Doa-uM-McY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="pgh-xE-d5I"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="234.5" y="417.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="4aF-BS-xwj">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="5Pd-EI-9EH">
+                    <rect key="frame" x="344" y="27" width="199" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is he come here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGe-fH-iG5">
+                            <rect key="frame" x="39" y="0.0" width="160" height="21"/>
+                            <color key="backgroundColor" red="0.96791107382550334" green="1" blue="0.51649014261744963" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="he is sb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peJ-Ob-PeC">
+                            <rect key="frame" x="140" y="21" width="59" height="21"/>
+                            <color key="backgroundColor" red="0.96791107382550334" green="0.13105599832214765" blue="0.74766673657718119" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5Pd-EI-9EH" secondAttribute="bottom" constant="531" id="0fP-jF-Ucd"/>
+                <constraint firstItem="5Pd-EI-9EH" firstAttribute="leading" secondItem="4aF-BS-xwj" secondAttribute="leading" constant="344" id="PYJ-xB-pWa"/>
+                <constraint firstAttribute="trailing" secondItem="5Pd-EI-9EH" secondAttribute="trailing" constant="57" id="sz0-Cl-dAN"/>
+                <constraint firstItem="5Pd-EI-9EH" firstAttribute="top" secondItem="4aF-BS-xwj" secondAttribute="top" constant="27" id="ymV-RD-2AZ"/>
+            </constraints>
+            <point key="canvasLocation" x="782" y="309"/>
+        </view>
+    </objects>
+</document>

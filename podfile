@@ -1,0 +1,4 @@
+platform:ios,'7.0'
+target 'UIStackViewBasicKnowledge' do
+pod 'SDWebImage'
+end
